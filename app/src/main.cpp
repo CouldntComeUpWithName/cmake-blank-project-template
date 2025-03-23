@@ -5,7 +5,7 @@ int main(int argc, char** argv)
 {
   binary_loader loader;
   
-  loader.load("../../app/res/file.bin"); // Here's how relative paths work in every dev. environment
+  loader.load("../../app/res/file.bin");
   
   std::cout << loader.data() << std::endl;
   std::cin.get();

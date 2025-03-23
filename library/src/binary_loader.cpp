@@ -4,7 +4,7 @@
 
 void binary_loader::load(const std::filesystem::path &path)
 {
-  std::ifstream file;
+	std::ifstream file;
 	file.open(path, std::ios::in | std::ios::binary);
 
 	if (file.is_open())
@@ -12,7 +12,7 @@ void binary_loader::load(const std::filesystem::path &path)
 		file.seekg(0, std::ios::end);
 		auto size = file.tellg();
 		file.seekg(0, std::ios::beg);
-		data_.resize(static_cast<size_t>(size), ' ');
+		data_.resize(static_cast<size_t>(size));
 		
 		file.read(&data_[0], size);
 		

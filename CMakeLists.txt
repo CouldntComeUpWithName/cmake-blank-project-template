@@ -1,9 +1,5 @@
 cmake_minimum_required(VERSION 3.14..3.24)
 
-if(XCODE)
-  message(FATAL_ERROR "XCODE isn't supported yet")
-endif()
-
 project( MyProject 
   VERSION 0.0.0
   DESCRIPTION "template-project"
